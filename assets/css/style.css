@@ -20,7 +20,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/copy.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -360,7 +360,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   padding: 30px;
 }
 
@@ -459,6 +459,7 @@ section .container {
   position: absolute;
   top: -25px;
   left: 50%;
+  transform: translateX(-50%);
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;

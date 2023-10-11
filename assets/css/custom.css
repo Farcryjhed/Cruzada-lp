@@ -1,6 +1,69 @@
 body::before {
-    background: #040404 url("../img/copy.jpg") center no-repeat !important;
+    background: #040404 url("../img/bg.jpg") center no-repeat !important;
     background-size: cover !important;
 
   }
+
+  @keyframes typeRightLeft {
+    0% {
+        content: "";
+    }
+    10% {
+        content: "U";
+    }
+    20% {
+        content: "Ur";
+    }
+    30% {
+        content: "Uri";
+    }
+    40% {
+        content: "Uriel";
+    }
+    50% {
+        content: "Uriel ";
+    }
+    60% {
+        content: "Uriel J";
+    }
+    70% {
+        content: "Uriel Jh";
+    }
+    80% {
+        content: "Uriel Jhe";
+    }
+    90% {
+        content: "Uriel Jhed";
+    }
+    100% {
+        content: "Uriel Jhed B. Cruzada";
+    }
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  white-space: nowrap;
+  animation: typeRightLeft 8s steps(8) infinite;
+}
+h1::after {
+  content: "|"; /* The cursor character, you can change this */
+  display: inline-block;
+  opacity: 0;
+  animation: blinkCursor 2s steps(2) infinite;
+  font-size: 80%; /* Make the cursor thinner */
+  color: green; /* Change the cursor color to green */
+}
+@keyframes blinkCursor {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+
+
+
 
